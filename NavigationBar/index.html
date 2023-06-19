@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" >My Logo</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Dropdown<b>+</b></a>
+                    <ul>
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3 <b>+</b></a>
+                            <ul>
+                                <li><a href="#">Sub-Menu 1</a></li>
+                                <li><a href="#">Sub-Menu 2</a></li>
+                                <li><a href="#">Sub-Menu 3 <b>+</b></a>
+                                    <ul>
+                                        <li><a href="#">Product 1</a></li>
+                                        <li><a href="#">Product 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>                           
+                        </li>
+                    </ul>                
+                </li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog<b>+</b></a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){            
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
